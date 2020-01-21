@@ -49,7 +49,7 @@ class mailman (
     content => template('mailman/mm_cfg.py.erb'),
     owner   => 'root',
     group   => $mm_group,
-    mode    => '0640',
+    mode    => '0644',
     notify  => Service['mailman'],
   }
 
